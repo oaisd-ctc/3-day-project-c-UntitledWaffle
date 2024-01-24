@@ -2,12 +2,12 @@
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to Mystic Forest Adventure!");
-
-        // Create a new player
+        Console.WriteLine("Welcome to Shark RPG, please enter your player name.");
+        Console.ReadLine();
+        // Create a new player that inputs their name
         Player player = new Player("Hero");
 
-        // Game loop - simplified for the starter code
+        // Game loop
         while (true)
         {
             Console.WriteLine("\nChoose an action: \n1. Move \n2. Rest \n3. Explore \n4. Check Stats \n5. Exit");
@@ -40,4 +40,4 @@
     }
 }
 
-//The base code credit goes to Mr.Mart himself
+//The most basic code structure goes to the credit of Mr.Mart

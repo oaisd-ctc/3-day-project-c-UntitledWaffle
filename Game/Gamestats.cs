@@ -11,7 +11,7 @@ public static class GameStats
     public static void DisplayGlobalStats()
     {
         Console.WriteLine($"Total Steps Taken by All Players: {TotalStepsTaken}");
-        // Display other global stats here
+        //Console.WriteLine($"Total Items Collected: {TotalItemCollected}")
     }
 
     // Add other static methods for global game functionalities here

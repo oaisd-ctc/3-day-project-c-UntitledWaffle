@@ -6,7 +6,7 @@ public class Player
     private Item[] items;
     
     // Add new properties here (e.g., Health, Fatigue, Inventory)
-
+    
     public Player(string name)
     {
         this.name = name;
@@ -34,6 +34,7 @@ public class Player
     {
         Console.WriteLine($"{name}'s Steps: {stepsTaken}");
         // Display additional stats here
+
     }
 
     // Add additional methods for player interactions here
