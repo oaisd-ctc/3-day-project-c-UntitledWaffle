@@ -3,9 +3,9 @@
     public static void Main(string[] args)
     {
         Console.WriteLine("Welcome to Shark RPG, please enter your player name.");
-        Console.ReadLine();
+        string name = Console.ReadLine();
         // Create a new player that inputs their name
-        Player player = new Player("Hero");
+        Player player = new Player(name);
 
         // Game loop
         while (true)
