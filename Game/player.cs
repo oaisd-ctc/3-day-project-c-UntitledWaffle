@@ -49,6 +49,11 @@ if(i != stepsTaken){
 Console.WriteLine("oh no a enemy youve taken 5 damage!");
 for(int e =0; e <5;e++){
 Maxhealth--;
+if(Maxhealth == 0){
+    Console.Clear();
+    GameOver();
+    break;
+}
 }
 
 }
@@ -64,6 +69,7 @@ public void GameOver(){
     if(Maxhealth == 0){
         Console.WriteLine("your health is:" + Maxhealth);
         Console.WriteLine("Game Over! you died");
+        return;
     }
 }
     public void Rest(){
