@@ -44,8 +44,8 @@ public int Fatigue;
         // Implement the chance of a random encounter below:
         Random rnd = new Random();
 for(int n = 1; n == 1; n ++){
-int i = rnd.Next(1,5);
-if(i != stepsTaken){
+int i = rnd.Next(1,10);
+if(i == stepsTaken){
 Console.WriteLine("oh no a enemy youve taken 5 damage!");
 for(int e =0; e <5;e++){
 Maxhealth--;
@@ -62,7 +62,7 @@ break;
     }
 public void Explore()
 {
-
+Console.WriteLine("you found nothing");
 }
 
 public void GameOver(){
@@ -70,6 +70,12 @@ public void GameOver(){
         Console.WriteLine("your health is:" + Maxhealth);
         Console.WriteLine("Game Over! you died");
         return;
+    }
+}
+public void Gamewin(){
+    if(stepsTaken==10){
+        Console.Clear();
+        Console.WriteLine("You Won!");
     }
 }
     public void Rest(){
