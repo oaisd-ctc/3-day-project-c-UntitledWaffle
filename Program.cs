@@ -18,14 +18,20 @@
                     GameStats.IncrementSteps();
                     break;
                 case "2":
+                    // Implement Rest logic here
+                    player.Rest();
                     break;
                 case "3":
+                    // Implement Explore logic here
+                    player.Explore();
                     break;
                 case "4":
                     player.DisplayStats();
                     GameStats.DisplayGlobalStats();
                     break;
+                
                 case "5":
+        
                     Console.WriteLine("Exiting game...");
                     return;
                 default:
