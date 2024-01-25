@@ -4,10 +4,8 @@
     {
         Console.WriteLine("Welcome to Shark RPG, please enter your player name.");
         string name = Console.ReadLine();
-        // Create a new player that inputs their name
         Player player = new Player(name);
 
-        // Game loop
         while (true)
         {
             Console.WriteLine("\nChoose an action: \n1. Move \n2. Rest \n3. Explore \n4. Check Stats \n5. Exit");
@@ -20,10 +18,8 @@
                     GameStats.IncrementSteps();
                     break;
                 case "2":
-                    // Implement Rest logic here
                     break;
                 case "3":
-                    // Implement Explore logic here
                     break;
                 case "4":
                     player.DisplayStats();
