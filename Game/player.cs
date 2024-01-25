@@ -32,8 +32,6 @@ public int Fatigue;
         return name;
     }
 
-    // Add methods for Rest, Explore, and other actions here
-
     public void Move()
     {
         stepsTaken++;
@@ -102,5 +100,4 @@ public void Gamewin(){
         Console.WriteLine($"{name}'s fatigue:{Fatigue}");
     }
 
-    // Add additional methods for player interactions here
 }

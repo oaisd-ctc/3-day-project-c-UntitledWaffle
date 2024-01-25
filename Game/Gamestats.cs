@@ -1,7 +1,6 @@
 public static class GameStats
 {
     public static int TotalStepsTaken { get; private set; }
-    // Add new static properties here (e.g., TotalItemsFound, TotalEncounters)
 
     public static void IncrementSteps()
     {
@@ -16,6 +15,4 @@ public static class GameStats
         // Display other global stats here
         
     }
-
-    // Add other static methods for global game functionalities here
 }
